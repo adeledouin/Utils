@@ -5,8 +5,11 @@ import pandas as pd
 import polars
 
 import numpy as np
-from Data.dict_data_str import *
 
+summary_value_astep = {'raw': 0, 'RAW': 0, 'SHIFT': 1, 'PHYS': 2, '_merge': 1, 'CROSS': 4, 'batch': 9}
+summary_value_signaltype = {'force': 0.1, 'position': 0.2, 'energie': 0.3, 'acoustic': 0.5,
+                            'signals10k': 0.4, 'signals100k': 0.6, 'noise100k': 0.8}
+summary_value_eventtype = {'idx': 0.01, 'event': 0.02, 'df': 0.03}
 
 def value_chaine(chaine):
     logging.debug('{}'.format(chaine))

@@ -2,11 +2,8 @@
 
 
 import numpy as np
-import matplotlib as mpl
-import matplotlib.cm as cm
 from scipy.optimize import least_squares
 from scipy import linalg
-import seaborn as sns
 
 ## TODO comment PaperPlot class
 

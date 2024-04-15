@@ -5,19 +5,10 @@ Created on Wen May 3 2023
 @author: Adèle Douin
 """
 
-import numpy as np
-import matplotlib as mpl
-import matplotlib.cm as cm
-from scipy.optimize import least_squares
-from scipy import linalg
-from Utils.Module.fct_stats import *
-from matplotlib import patches
-from mpl_toolkits.axes_grid1 import make_axes_locatable
-import seaborn as sns
-import matplotlib.gridspec as gridspec
 import logging
+import seaborn as sns
 
-from Utils.Module_Plot.fct_plot import *
+from Utils.CleanPlot.fct_plot import *
 
 
 # ------------------------------------------
@@ -25,10 +16,11 @@ class PaperPlot():
     """ Module_Plot clean & automatic plot
     """
     # ---------------------------------------------------------#
-    def __init__(self, remote: bool, latex=True) -> None:
+    def __init__(self, remote: bool = False, latex: bool=True) -> None:
         """ Initialisation Paper Plot
 
         :param remote: deal with plot render => if True only save plot without render
+        :param latex: deal with plot render => if True usetex from matplotlib
         """
         self.remote = remote
 
@@ -46,8 +38,10 @@ class PaperPlot():
         else:
             self.plt.rcParams.update({
                 "text.usetex": False,
+                "font.family": "serif",
+                "font.serif": "cmr10",
                 "font.size": 20,
-                "font.weight": "bold"
+                "font.weight": "extra bold"
             })
         self.plt.rcParams.update({'axes.titleweight': 'bold'})
         self.plt.rcParams.update({'axes.labelweight': 'bold'})

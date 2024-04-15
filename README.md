@@ -26,7 +26,7 @@ Chemin des datas - dépend très souvent des ordi... - par exemple :
 4) run commande suivante
 
 ```bash
-#cd Utils
+cd Utils
 pip install -r requirements.txt
 ```
 
@@ -61,6 +61,9 @@ pip freeze > requirements.txt
 ```
 
 pour lister les package d'un env ```(nom_env) adele@anima: pip list``` dans le terminal.
+
+7) Install de latex NECESSAIRE pour clean plot avec CMU font
+
 
 ## Git Repo
 
