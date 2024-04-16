@@ -62,8 +62,13 @@ pip freeze > requirements.txt
 
 pour lister les package d'un env ```(nom_env) adele@anima: pip list``` dans le terminal.
 
-7) Install de latex NECESSAIRE pour clean plot avec CMU font
-
+7) Install de latex NECESSAIRE pour clean plot avec CMU font 
+   - windows : install MikTex (https://miktex.org/download)
+   - ubuntu : 
+```bash
+sudo apt install texlive texlive-latex-extra texlive-fonts-recommended dvipng
+pip install latex
+```
 
 ## Git Repo
 
