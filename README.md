@@ -1,5 +1,7 @@
 # Utils : Good to Know
 
+Contains a wide range of classes and utility functions for analyzing and displaying physical data 
+
 ## Gestion des paths pour projets communs 
 
 Chemin du projet : 
